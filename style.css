@@ -1,0 +1,257 @@
+:root{
+    --main-hover-color:#3a86ff;
+    --main-border-color:black
+}
+
+
+body{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    overflow-x: hidden;
+}
+.top-container{
+    width: 100%;
+    height: 50vh;
+    border: 2px solid red;
+    background-image: linear-gradient(163deg, rgba(0,0,0,0.45821656299238445) 32%, rgba(0,0,0,0.4526143220960259) 69%),url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.top-container h1{
+    margin-top: 15vh;
+}
+.nav-container{
+    border: 2px solid red;
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    margin-top: -13vh;
+}
+.main-container{
+    width: 100%;
+    height:auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.last-added-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.top-part{
+    width: 100%;
+    border: 2px solid red;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-part div{
+    border: 2px solid green;
+    width: 50vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+.top-part input{
+    width: 40vw;
+    height: 20vh;
+    border: none;
+  border-bottom: 2px solid red;
+}
+#maontain-gradient{
+    background: rgb(58,66,67);
+    background: linear-gradient(163deg, rgba(58,66,67,1) 19%, rgba(48,42,47,1) 69%);
+
+}
+.main-btn{
+    width: 15vw;
+    height: 10vh;
+    background-color: white;
+    border: 3px solid var(--main-border-color);
+    border-radius: 100px;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-box-shadow: 8px 10px 21px -14px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 10px 21px -14px rgba(66, 68, 90, 1);
+    box-shadow: 8px 10px 21px -14px rgba(66, 68, 90, 1);
+}
+.main-btn a:link{
+    text-decoration: none;
+    color: black;
+}
+.main-btn a:visited{
+    text-decoration: none;
+    color: black;
+}
+.main-btn:hover{
+    background-color: var(--main-hover-color);
+    color: white;
+}
+.data-container{
+    border: 2px solid green;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 5vw;
+    padding-top: 15vh;
+    background-image: url('https://images.unsplash.com/photo-1612805148798-00f691878516?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* margin-top: 10vh; */
+
+
+}
+
+.left-side{
+    border: 3px solid var(--main-border-color);
+    width: 40vw;
+    height: 70vh;
+    margin-left: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.289);
+    color: white;
+}
+.left-side h1{
+    font-size: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+.left-side div{
+    /* border: 2px solid red; */
+    height: 50vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left-side p{
+    border: 3px solid var(--main-border-color);
+    width: 80%;
+    height: 8vh;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    font-size: 1.3vw;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+    -webkit-box-shadow: 8px 10px 21px -14px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 10px 21px -14px rgba(66, 68, 90, 1);
+    box-shadow: 8px 10px 21px -14px rgba(66, 68, 90, 1);
+}
+.left-side p:hover{
+    background-color: var(--main-hover-color);
+    color: white;
+}
+.left-side i{
+    margin-right: 1vw;
+}
+.right-side{
+    /* border:2px solid red; */
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    gap: 2vh;
+    
+}
+.min-data-container{
+    border: 3px solid var(--main-border-color);
+    border-radius: 20px;
+    height: 34vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.289);
+    color: white;
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+.info-container div{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid red;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    height: 8vh;
+    margin-top: 3vh;
+}
+.info-container p{
+    font-size: 2vw;
+}
+.info-container h1{
+    font-size: 3vw;
+}
+.search-container{
+    width: 100%;
+    border: 2px solid red;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar{
+    width: 40vw;
+    height: 8vh;
+    border: 3px solid var(--main-border-color);
+    border-radius: 100px;
+    padding-left: 2vw;
+    font-size: 1.5vw;
+}
+.error-info{
+    color: red;
+    /* opacity: 0;    */
+}
+#users-page{
+    background-image: linear-gradient(163deg, rgba(0,0,0,0.45821656299238445) 32%, rgba(0,0,0,0.4526143220960259) 69%),url('https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+}
+
+.last-add-table{
+    width: 35vw;
+    height: 20vh;
+    border: 2px solid black;
+}
+.last-add-row td{
+    text-align: center;
+}
+#margin-top{
+    padding-top: 10vh;
+}
