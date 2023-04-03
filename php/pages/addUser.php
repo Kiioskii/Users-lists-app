@@ -68,7 +68,7 @@ if (isset($_POST['created'])) { //checking the corresponding query from the .js 
             <h1>Dodanie użytkowników:</h1>
             <form method="post" action="addUser.php" class="from-container"> <!-- Form with information about the newly created user -->
                 <div class="input-container">
-                    <label>nick:</label>
+                    <label>Nazwa:</label>
                     <input type="text" id="nick">
                     <p class="error-info" id="nick-err">nick nie została wpisana!</p> <!-- this container is displayed when no nick id enetered -->
                 </div>
@@ -83,7 +83,7 @@ if (isset($_POST['created'])) { //checking the corresponding query from the .js 
                     <p class="error-info" id="name-err">name nie zostało wpisane!</p><!-- this container is displayed when no name id enetered -->
                 </div>
                 <div class="input-container">
-                    <label>surname:</label>
+                    <label>Nazwisko:</label>
                     <input type="text" id="surname">
                     <p class="error-info" id="usrname-err">surname nie zostało wpisane!</p><!-- this container is displayed when no surname id enetered -->
                 </div>

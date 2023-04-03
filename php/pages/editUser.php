@@ -120,7 +120,7 @@ if (isset($_POST['isEdited'])) { //conection to database
                     <p class="error-info" id="date-err">Data jest nie poprawna!</p><!-- this container is displayed when no birthday id enetered -->
                 </div>
                 <div class="form-buttons-container" id="center-container">
-                    <input type="button" value="Zapisz zminy" id="edit_user center-btn" class="form-btn">
+                    <input type="button" value="Zapisz zminy" id="edit_user" class="form-btn center-btn">
                 </div>
             </form>
             <p id="succes-container"><!-- this container is displayed when a user is successfully added  -->

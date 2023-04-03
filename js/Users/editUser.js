@@ -31,7 +31,6 @@ $(document).ready(function () {
     },
     dataType: "text",
   });
-
   $("#edit_user").on("click", () => {
     hideError();
     const nick = $("#nick").val();
@@ -40,7 +39,7 @@ $(document).ready(function () {
     const surname = $("#surname").val();
     const birthday = $("#birthday").val();
     let error = dataValidate();
-
+    console.log(error);
     if (error == false) {
       $.ajax({
         //transferring information to the backend
@@ -56,6 +55,7 @@ $(document).ready(function () {
           birthday: birthday,
         },
         success: (res) => {
+          console.log(res);
           if ((res.toString() === "success") == true) {
             $("#succes-container").fadeOut(1);
             $("#nick").val("");
@@ -94,5 +94,6 @@ $(document).ready(function () {
       $("#usrname-err").fadeIn(1);
       return true;
     }
+    return false;
   };
 });
